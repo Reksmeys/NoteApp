@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jga-VL-Rvj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="seo-KT-Mii">
+            <objects>
+                <viewController storyboardIdentifier="mainStoryBoard" id="Etg-Iy-Dzo" customClass="ViewController" customModule="NoteCoreData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O6S-7p-DfH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TWd-5n-UrO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="538"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jtp-Vc-sg7">
+                                    <size key="itemSize" width="181" height="145"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="titleCell" id="XZv-Uf-wdC" customClass="NoteCollectionViewCell" customModule="NoteCoreData" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="145"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="181" height="145"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBj-Xz-ICc">
+                                                    <rect key="frame" x="6" y="55" width="166" height="80"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5T-Rz-OR1">
+                                                    <rect key="frame" x="9" y="5" width="163" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="hBj-Xz-ICc" firstAttribute="top" secondItem="XZv-Uf-wdC" secondAttribute="top" constant="55" id="BHL-Kd-zB9"/>
+                                            <constraint firstItem="d5T-Rz-OR1" firstAttribute="leading" secondItem="hBj-Xz-ICc" secondAttribute="trailing" constant="-163" id="JVK-nl-om8"/>
+                                            <constraint firstItem="hBj-Xz-ICc" firstAttribute="leading" secondItem="XZv-Uf-wdC" secondAttribute="leading" constant="6" id="Y5J-cM-rMI"/>
+                                            <constraint firstAttribute="trailing" secondItem="hBj-Xz-ICc" secondAttribute="trailing" constant="9" id="ch2-7k-Kee"/>
+                                            <constraint firstItem="hBj-Xz-ICc" firstAttribute="top" secondItem="d5T-Rz-OR1" secondAttribute="bottom" constant="8" id="dvn-HW-SPk"/>
+                                            <constraint firstAttribute="trailing" secondItem="d5T-Rz-OR1" secondAttribute="trailing" constant="9" id="j9P-J0-bOO"/>
+                                            <constraint firstItem="d5T-Rz-OR1" firstAttribute="leading" secondItem="XZv-Uf-wdC" secondAttribute="leading" constant="9" id="pym-Kb-Yas"/>
+                                            <constraint firstItem="d5T-Rz-OR1" firstAttribute="top" secondItem="XZv-Uf-wdC" secondAttribute="top" constant="5" id="rn2-Go-0xq"/>
+                                            <constraint firstAttribute="bottom" secondItem="hBj-Xz-ICc" secondAttribute="bottom" constant="10" id="srr-Uv-x2m"/>
+                                            <constraint firstAttribute="bottom" secondItem="d5T-Rz-OR1" secondAttribute="bottom" constant="98" id="yi5-eR-gAy"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="descriptionCell" destination="hBj-Xz-ICc" id="X6f-W9-gZn"/>
+                                            <outlet property="titleCell" destination="d5T-Rz-OR1" id="iHi-u3-TBr"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Etg-Iy-Dzo" id="rEu-hl-IIY"/>
+                                    <outlet property="delegate" destination="Etg-Iy-Dzo" id="Kz4-N5-x3j"/>
+                                </connections>
+                            </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9i-XB-5kv">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <gestureRecognizers/>
+                                <items>
+                                    <barButtonItem title="Take a note.........." id="AAz-UR-cvD">
+                                        <color key="tintColor" red="0.94193679090000004" green="0.91002017260000001" blue="0.89296936989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="actionToolbar:" destination="Etg-Iy-Dzo" id="VB2-am-oIp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="DBz-gI-Swd"/>
+                                    <barButtonItem image="bullet" id="nAP-iO-PBL">
+                                        <color key="tintColor" red="0.94193679090000004" green="0.91002017260000001" blue="0.89296936989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="actionToolbar:" destination="Etg-Iy-Dzo" id="2Ja-rU-xaP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Ghb-fr-K7H">
+                                        <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="IcI-wE-QKS">
+                                        <color key="tintColor" red="0.94193679090000004" green="0.91002017260000001" blue="0.89296936989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem image="edit" id="4ks-qp-Yjd">
+                                        <color key="tintColor" red="0.94193679090000004" green="0.91002017260000001" blue="0.89296936989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="actionToolbar:" destination="Etg-Iy-Dzo" id="Z2H-kQ-Od3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="xES-0D-r6I"/>
+                                    <barButtonItem image="micro" id="ugD-wU-Stj">
+                                        <color key="tintColor" red="0.94193679090000004" green="0.91002017260000001" blue="0.89296936989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="actionToolbar:" destination="Etg-Iy-Dzo" id="stJ-OZ-KQl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="hPE-vY-xP0"/>
+                                    <barButtonItem image="camera" id="TD3-DZ-dge">
+                                        <color key="tintColor" red="0.94193679090000004" green="0.91002017260000001" blue="0.89296936989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="actionToolbar:" destination="Etg-Iy-Dzo" id="ueO-Dm-Odx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Etg-Iy-Dzo" id="hcN-nk-PZX"/>
+                                </connections>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="TWd-5n-UrO" firstAttribute="centerY" secondItem="O6S-7p-DfH" secondAttribute="centerY" id="1Uz-T8-5aH"/>
+                            <constraint firstItem="b9i-XB-5kv" firstAttribute="top" secondItem="TWd-5n-UrO" secondAttribute="bottom" constant="21" id="5vX-mI-QRF"/>
+                            <constraint firstItem="TWd-5n-UrO" firstAttribute="leading" secondItem="PVn-11-q6g" secondAttribute="leading" id="DtA-cr-IbJ"/>
+                            <constraint firstItem="TWd-5n-UrO" firstAttribute="leading" secondItem="b9i-XB-5kv" secondAttribute="leading" id="FwS-aW-riQ"/>
+                            <constraint firstItem="TWd-5n-UrO" firstAttribute="trailing" secondItem="b9i-XB-5kv" secondAttribute="trailing" id="ZXA-Ih-OHK"/>
+                            <constraint firstItem="TWd-5n-UrO" firstAttribute="top" secondItem="PVn-11-q6g" secondAttribute="top" id="ezw-KF-TJL"/>
+                            <constraint firstItem="TWd-5n-UrO" firstAttribute="trailing" secondItem="PVn-11-q6g" secondAttribute="trailing" id="r3J-3d-ECj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PVn-11-q6g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YNq-pj-Oj3">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="horizental" id="Bba-Y5-r8C">
+                                <inset key="imageInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="search" id="Gb8-tc-LkA">
+                                <inset key="imageInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noteCollectionView" destination="TWd-5n-UrO" id="G4z-Rf-1xb"/>
+                        <segue destination="WzM-BA-a9M" kind="show" id="apJ-xW-tHG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qc2-aC-WUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="-100.29985007496252"/>
+        </scene>
+        <!--Detail Note View Controller-->
+        <scene sceneID="JQF-sf-zgf">
+            <objects>
+                <viewController storyboardIdentifier="detailStoryBoard" id="WzM-BA-a9M" customClass="DetailNoteViewController" customModule="NoteCoreData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DjA-lh-7GY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mbj-F7-gfW">
+                                <rect key="frame" x="16" y="94" width="343" height="49"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Twv-dm-sdu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem id="JPc-by-noA">
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="download" id="fl2-VK-t0I">
+                                                <inset key="imageInsets" minX="20" minY="0.0" maxX="10" maxY="0.0"/>
+                                            </barButtonItem>
+                                            <barButtonItem image="hand" id="FSr-F1-8O1">
+                                                <inset key="imageInsets" minX="30" minY="0.0" maxX="10" maxY="0.0"/>
+                                            </barButtonItem>
+                                            <barButtonItem image="pin" id="YEE-lE-YH1">
+                                                <inset key="imageInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="some description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="biy-8N-U2e">
+                                <rect key="frame" x="16" y="151" width="343" height="461"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yid-YB-14c">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="addnewIcon" id="5bq-Ne-RhV">
+                                        <inset key="imageInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="actionPopAlertBarButton:" destination="WzM-BA-a9M" id="z8Q-YK-0bF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="KDO-ae-0h2"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="u7d-gt-sPU"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ixw-I2-nIY"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="0OD-p8-JyQ"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="evi-pz-iUc"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="WIo-w5-6Xu"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ho6-58-HcS"/>
+                                    <barButtonItem image="viewmore" id="Yi8-49-TjG">
+                                        <inset key="imageInsets" minX="20" minY="0.0" maxX="-10" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="moreBarButton:" destination="WzM-BA-a9M" id="2XM-iP-JNv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kzi-NC-pBA" firstAttribute="bottom" secondItem="biy-8N-U2e" secondAttribute="bottom" constant="55" id="0eP-O7-Uki"/>
+                            <constraint firstItem="Kzi-NC-pBA" firstAttribute="trailing" secondItem="biy-8N-U2e" secondAttribute="trailing" constant="16" id="9zJ-R8-mBD"/>
+                            <constraint firstAttribute="trailing" secondItem="Twv-dm-sdu" secondAttribute="trailing" id="AIS-2H-Mxj"/>
+                            <constraint firstItem="Mbj-F7-gfW" firstAttribute="leading" secondItem="Kzi-NC-pBA" secondAttribute="leading" constant="16" id="PoQ-jw-IEX"/>
+                            <constraint firstItem="Twv-dm-sdu" firstAttribute="leading" secondItem="DjA-lh-7GY" secondAttribute="leading" id="RSY-8v-06B"/>
+                            <constraint firstItem="biy-8N-U2e" firstAttribute="top" secondItem="Mbj-F7-gfW" secondAttribute="bottom" constant="8" id="RkL-cq-8az"/>
+                            <constraint firstItem="biy-8N-U2e" firstAttribute="leading" secondItem="Kzi-NC-pBA" secondAttribute="leading" constant="16" id="TWU-1m-5MA"/>
+                            <constraint firstItem="Kzi-NC-pBA" firstAttribute="trailing" secondItem="biy-8N-U2e" secondAttribute="trailing" constant="16" id="Tia-Ia-pzL"/>
+                            <constraint firstItem="Kzi-NC-pBA" firstAttribute="trailing" secondItem="Mbj-F7-gfW" secondAttribute="trailing" constant="16" id="fZj-ZQ-BUZ"/>
+                            <constraint firstItem="Twv-dm-sdu" firstAttribute="top" secondItem="DjA-lh-7GY" secondAttribute="top" id="ffF-aU-zAA"/>
+                            <constraint firstItem="Mbj-F7-gfW" firstAttribute="top" secondItem="Kzi-NC-pBA" secondAttribute="top" constant="30" id="g33-mf-nIm"/>
+                            <constraint firstItem="biy-8N-U2e" firstAttribute="top" secondItem="Mbj-F7-gfW" secondAttribute="bottom" constant="8" id="t2c-ab-oRm"/>
+                            <constraint firstItem="biy-8N-U2e" firstAttribute="top" secondItem="Kzi-NC-pBA" secondAttribute="top" constant="87" id="xN4-1O-EBG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kzi-NC-pBA"/>
+                    </view>
+                    <connections>
+                        <outlet property="noteBodyTextView" destination="biy-8N-U2e" id="7My-Ac-7Z5"/>
+                        <outlet property="titleTextField" destination="Mbj-F7-gfW" id="A3O-yc-nvd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gii-Jg-hxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.5999999999999" y="-110.19490254872565"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r5g-7x-PwI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jga-VL-Rvj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QzA-e7-BAY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Etg-Iy-Dzo" kind="relationship" relationship="rootViewController" id="fU8-St-hGw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFO-Yt-w2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-505" y="-100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addnewIcon" width="40" height="40"/>
+        <image name="bullet" width="24" height="24"/>
+        <image name="camera" width="24" height="24"/>
+        <image name="download" width="30" height="30"/>
+        <image name="edit" width="24" height="24"/>
+        <image name="hand" width="30" height="30"/>
+        <image name="horizental" width="30" height="30"/>
+        <image name="micro" width="24" height="24"/>
+        <image name="pin" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
+        <image name="viewmore" width="40" height="40"/>
+    </resources>
+</document>
