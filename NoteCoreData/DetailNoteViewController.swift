@@ -26,6 +26,7 @@ class DetailNoteViewController: UIViewController, UITextViewDelegate{
         
         titleTextField.text = titles
         noteBodyTextView.text = desc
+        
         if status == "edit"{
             navigationItem.title = "Notes"
         }else{

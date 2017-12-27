@@ -30,6 +30,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         noteCollectionView.addGestureRecognizer(longGesture)
         self.note?.reverse()
         noteCollectionView.reloadData()
+    
 
     }
     override func viewDidAppear(_ animated: Bool) {

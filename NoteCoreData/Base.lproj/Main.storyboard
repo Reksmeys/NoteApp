@@ -163,8 +163,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mbj-F7-gfW">
-                                <rect key="frame" x="16" y="94" width="343" height="49"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="title" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Mbj-F7-gfW">
+                                <rect key="frame" x="16" y="72" width="343" height="71"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -233,7 +233,7 @@
                             <constraint firstItem="Kzi-NC-pBA" firstAttribute="trailing" secondItem="biy-8N-U2e" secondAttribute="trailing" constant="16" id="Tia-Ia-pzL"/>
                             <constraint firstItem="Kzi-NC-pBA" firstAttribute="trailing" secondItem="Mbj-F7-gfW" secondAttribute="trailing" constant="16" id="fZj-ZQ-BUZ"/>
                             <constraint firstItem="Twv-dm-sdu" firstAttribute="top" secondItem="DjA-lh-7GY" secondAttribute="top" id="ffF-aU-zAA"/>
-                            <constraint firstItem="Mbj-F7-gfW" firstAttribute="top" secondItem="Kzi-NC-pBA" secondAttribute="top" constant="30" id="g33-mf-nIm"/>
+                            <constraint firstItem="Mbj-F7-gfW" firstAttribute="top" secondItem="Kzi-NC-pBA" secondAttribute="top" constant="8" id="g33-mf-nIm"/>
                             <constraint firstItem="biy-8N-U2e" firstAttribute="top" secondItem="Mbj-F7-gfW" secondAttribute="bottom" constant="8" id="t2c-ab-oRm"/>
                             <constraint firstItem="biy-8N-U2e" firstAttribute="top" secondItem="Kzi-NC-pBA" secondAttribute="top" constant="87" id="xN4-1O-EBG"/>
                         </constraints>
